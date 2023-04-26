@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="email_list.css">
+
+
+  <!-- Bootstraps CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Bootstraps JavaScript Bundle with Popper -->
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+  <script src="email_list.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <title>Contact Us</title>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+
+  $( function() {
+  $( "#datepicker" ).datepicker({ minDate: -20, maxDate: "+1M +10D" });
+} );
+  </script>
+
+
+
+
+</head>
+
+
+<body style="background-color: orange" >
+      <!-- NAV BAR -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="HomePage.html"><img src="images/letter-S-pizza.jpg" width=50> Soko's Pizza</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+    
+        
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="HomePage.html">Home <span class="sr-only"></span></a>
+            </li>
+            <li>
+              <a class="nav-link" href="ContactUs.html">Contact Us</a>
+            </li>
+            <li>
+              <a class="nav-link" href="AboutUs.html">About us</a>
+            </li>
+            <li>
+              <a class="nav-link" href="Orders.html">Orders</a>
+            </li>
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menus
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Breakfast.html">Breakfast</a></li>
+                <li><a class="dropdown-item" href="LunchDinner.html">Lunch and Dinner</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Specials.html">Specials</a></li>
+                <li><a class="dropdown-item" href="#">Something else</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" href="ajax.html">My Cocktails</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+      <!-- END - NAV BAR-->
+  <div id="accordion">
+    <h4 style="color:olivedrab">Number and Address</h4>
+    <div>
+          <p style="color: darkred;"><strong>(123) 456-7890</strong></p>
+          <p style="color: darkred;"><strong>105 Lander Dr. College City, NY 11221</strong></p>
+
+    </div>
+
+ 
+
+    <h4 style="color:olivedrab">Weekly Time</h4>
+    <div>
+      <p>Date: <input type="text" id="datepicker"></p>
+
+      <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Day</th>
+          <th scope="col">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Sunday</td>
+          <td>10:30am - 9:30pm</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Monday</td>
+          <td>10am - 10:30pm</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Tuesday</td>
+          <td>10am - 10:30pm</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Wednesday</td>
+          <td>10am - 10:30pm</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Thursday</td>
+          <td>10am - 11:30pm</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>Friday</td>
+          <td>10am - (two hours before sunset)</td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>Saturday</td>
+          <td>(two hours after sundown) - 12am</td>
+        </tr>
+      </tbody>
+      </table>
+    </div>
+    <h4 style="color:olivedrab">Subscribe Here</h4>
+    <div>
+        <form id="email_form" name="email_form" action="join.html" method="get">
+	        <label for="email_1">Email Address:</label>
+	        <input type="text" id="email_1" name="email_1">
+	        <span>*</span><br>
+
+	        <label for="first_name">First Name:</label>
+	        <input type="text" id="first_name" name="first_name">
+	        <span>*</span><br>
+	        	        
+			<label for="last_name">Last Name:</label>
+	        <input type="text" id="last_name" name="last_name">
+	        <span>*</span><br>
+	        	        
+	        <label for="state">State Code:</label>
+	        <input type="text" id="state" name="state" placeholder="2-character code">
+	        <span>*</span><br>
+	        	        
+	        <label for="zip">Zip Code:</label>
+	        <input type="text" id="zip" name="zip" placeholder="99999">
+	        <span>*</span><br>
+	        
+	        <label>Email me about:</label>
+	        <input type="checkbox" id="blog" name="Dov's Blog" value="Dov's Blog">Dov's Blog
+	        <input type="checkbox" id="update" name="Updates" value="Updates">Updates
+	        <input type="checkbox" id="sale" name="Sales" value="Sales">Sales
+	        <span>*</span><br><br>
+	        	        
+	        <label>&nbsp;</label>
+	        <input type="submit" id="join" name="join" value="Join our List">
+	        <input type="reset" id="reset" name="reset" value="Reset"><br>
+	    </form>
+    </div>
+    </div>
+   
+
+
+    <!-- FOOTER - mdbootstrap.com -->
+    <footer class="bg-light text-center text-white">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © Copyright 2022 :
+          <a class="text-white" href="HomePage.html">Dov Sokolin</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- END - FOOTER-->
+    
+    </body>
+    
+    </html>
